@@ -1,17 +1,14 @@
-## Foundry
+# Foundry Stablecoin
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Project Description
+Foundry Stablecoin is a simple Stablecoin contract based on the MakerDAO algorithmic Stablecoin DAI overcollateralized mechanism. It is written in the Foundry framework, with deployment scripts and tests. The project uses Chainlink price feeds for real-time USD price of collateral assets.
 
-Foundry consists of:
+## Installation Instructions
+Make sure you have Foundry and Git installed. Then, clone the repository locally:
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
+```shell
+$ git clone <repository_url>
+```
 
 ## Usage
 
@@ -39,7 +36,7 @@ $ forge fmt
 $ forge snapshot
 ```
 
-### Anvil
+### Anvil local node
 
 ```shell
 $ anvil
@@ -48,19 +45,14 @@ $ anvil
 ### Deploy
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+$ forge script script/DeployDSC.s.sol:DeployDSC --rpc-url <your_rpc_url> --private-key <your_private_key>
 ```
 
-### Cast
+## Contribution Guidelines
+Please fork the repository and create a pull request for any changes you would like to contribute. Ensure that your code follows the existing style and passes all tests.
 
-```shell
-$ cast <subcommand>
-```
+## Warning
+This code has not been audited. Use it at your own risk and be cautious if deploying it in a production environment.
 
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## License
+This project is licensed under the MIT License.
