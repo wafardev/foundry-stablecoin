@@ -7,7 +7,7 @@ Foundry Stablecoin is a simple ERC20 stablecoin contract based on the MakerDAO's
 Make sure you have Foundry and Git installed. Then, clone the repository locally:
 
 ```shell
-$ git clone <repository_url>
+$ git clone https://github.com/wafardev/foundry-stablecoin
 ```
 
 ## Usage
