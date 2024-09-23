@@ -1,7 +1,7 @@
 # Foundry Stablecoin
 
 ## Project Description
-Foundry Stablecoin is a simple Stablecoin contract based on the MakerDAO algorithmic Stablecoin DAI overcollateralized mechanism. It is written in the Foundry framework, with deployment scripts and tests. The project uses Chainlink price feeds for real-time USD price of collateral assets.
+Foundry Stablecoin is a simple ERC20 stablecoin contract based on the MakerDAO's DAI Algorithmic Stablecoin Overcollateralization Mechanism. It is written in the Foundry framework, with deployment scripts and tests. The project uses Chainlink price feeds for real-time USD price of collateral assets.
 
 ## Installation Instructions
 Make sure you have Foundry and Git installed. Then, clone the repository locally:
